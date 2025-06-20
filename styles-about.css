@@ -1,0 +1,373 @@
+
+
+/*MAIN*/
+
+  /*MAIN HEADER*/
+
+.about .main-header{
+  background: url('./assets/bg-pattern-about-1-mobile-nav-1.svg') no-repeat calc(100% + 6.3rem) calc(100% + 6.3rem),
+              #014E56;
+}
+
+.about .container-main-header{
+  padding-bottom: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+}
+
+.about .line-header{
+  display: none;
+}
+
+  /*MAIN TEAM*/
+
+.team{
+  background: url('./assets/bg-pattern-home-4-about-3.svg') no-repeat 100% 100%,
+              url('./assets/bg-pattern-about-2-contact-1.svg') no-repeat -6.3rem -6.3rem,
+              #004047;
+  padding: clamp(5.625rem, 4.7901rem + 3.5623vw, 6.5rem) 0 clamp(6.875rem, 5.8015rem + 4.5802vw, 8rem);
+}
+
+.title-article{
+  font-size: 2rem;
+  margin: 0 auto 3.125rem;
+}
+
+.member{
+  background: #012F34;
+  width: 20.4375rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.member:not(:last-of-type){
+  margin-bottom: 3.25rem;
+}
+
+.container-member-avatar{
+  display: block;
+  background: #012F34;
+  padding: 2rem 0 4rem;
+}
+
+.image-member{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  outline: 0.2rem solid #fff;
+}
+
+.member .title-member{
+  font-size: 1.125rem;
+  color: #79C8C7;
+  margin: 1.25rem 0 0;
+}
+
+.title-member span{
+  display: block;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.member .button-info{
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #F67E7E;
+  border-radius: 50%;
+  position: absolute;
+    top: calc(100% - 1.75rem); left: calc(50% - 1.75rem);
+}
+
+.member .button-info:hover{
+  background: #79C8C7;
+}
+
+.member .button-info svg{
+  position: relative;
+    top: 0.1rem;
+}
+
+.container-member-text{
+  display: none;  
+  background: #002529;
+  padding: 2rem 2.5rem 4rem;
+}
+
+.container-member-text .title-member{
+  margin: 0 0 1rem;
+}
+
+.container-member-text .list-logo{
+  width: 4rem;
+  margin: 1.2rem auto 0;
+}
+
+
+  /*MAIN CLIENTS*/
+
+.clients{
+  background: url('./assets/bg-pattern-about-4.svg') no-repeat -6.3rem -6.3rem,
+              #012F34;
+  padding: clamp(5.625rem, 5.0286rem + 2.5445vw, 6.25rem) 0 clamp(5.5rem, 4.4265rem + 4.5802vw, 6.625rem);
+}
+
+.clients .title-article{
+  margin-bottom: 4rem;
+}
+
+.container-logo-client{
+  margin: 0 auto;
+}
+
+.client-image{
+  margin: 3.25rem auto 0;
+}
+
+.container-logo-client:nth-of-type(1) .client-image{
+  width: 10.25rem;
+  height: 1.5rem;
+}
+
+.container-logo-client:nth-of-type(2) .client-image{
+  width: 9.75rem;
+  height: 1.5rem;
+}
+
+.container-logo-client:nth-of-type(3) .client-image{
+  width: 10.125rem;
+  height: 1.75rem;
+}
+
+.container-logo-client:nth-of-type(4) .client-image{
+  width: 9.25rem;
+  height: 1.5rem;
+}
+
+.container-logo-client:nth-of-type(5) .client-image{
+  width: 5.5rem;
+  height: 2.5rem;
+}
+
+
+/*** TABLET ***/
+
+@media screen and (min-width: 48rem){
+
+/*MAIN*/
+
+  /*MAIN HEADER*/
+
+  .about .main-header{
+    background: url('./assets/bg-pattern-about-1-mobile-nav-1.svg') no-repeat calc(100% + 6.3rem) 100%,
+              #014E56;
+  }
+
+  .about .container-main-header .text{
+    max-width: 50ch;
+  }
+
+  
+  /*MAIN TEAM*/
+
+  .team{
+    background: url('./assets/bg-pattern-home-4-about-3.svg') no-repeat 100% 100%,
+              url('./assets/bg-pattern-about-2-contact-1.svg') no-repeat -6.3rem 0,
+              #004047;
+    padding: 6.5rem 0 4.5rem;
+  }
+
+  .container-member{
+    width: 35.875rem; 
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .member{
+    width: 17.5625rem;
+    max-height: 15.8125rem;
+  }
+
+  .member:not(:nth-of-type(5), :nth-of-type(6)){
+    margin-bottom: 4.75rem;
+  }
+
+  .container-member-text{
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .container-member-text .title-member{
+    margin: 0 0 1rem;
+  }
+
+  .container-member-text .text{
+    width: 27ch;
+    margin: 0 auto;
+  }
+
+  .container-member-text .list-logo{
+    margin: 1.2rem auto 0;
+  }
+
+
+  /*MAIN CLIENTS*/
+
+  .clients{
+    background: url('./assets/bg-pattern-about-4.svg') no-repeat 0 -6.3rem,
+              #012F34;
+  }
+
+  .clients .title-article{
+    margin-bottom: 3rem;
+  }
+
+  .container-clients-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 43.25rem;
+  }
+
+  .container-logo-client{
+    margin: 0;
+  }
+
+  .client-image{
+    margin: 0;
+  }
+
+  .container-logo-client:nth-of-type(1) .client-image{
+    width: 6.5rem;
+    height: 1.25rem;
+  }
+
+  .container-logo-client:nth-of-type(2) .client-image{
+    width: 7.125rem;
+    height: 1.25rem;
+  }
+
+  .container-logo-client:nth-of-type(3) .client-image{
+    width: 7rem;
+    height: 1.125rem;
+  }
+
+  .container-logo-client:nth-of-type(4) .client-image{
+    width: 6.5rem;
+    height: 1.25rem;
+  }
+
+  .container-logo-client:nth-of-type(5) .client-image{
+    width: 3.75rem;
+    height: 1.875rem;
+  }
+
+
+}
+
+
+/*** DESKTOP ***/
+
+@media screen and (min-width: 90rem){
+
+/*MAIN*/
+
+  /*MAIN HEADER*/
+
+  .about .main-header{
+    background: url('./assets/bg-pattern-about-1-mobile-nav-1.svg') no-repeat calc(50% + 45rem) 100%,
+              #014E56;
+  }
+
+  .about .container-main-header{
+    max-width: 69.375rem;
+    position: relative;
+  }
+
+  .about .line-header{
+    display: block;
+    width: 3.125rem;
+    height: 0.25rem;
+    background: #F67E7E;
+    position: absolute;
+      top: 0; left: 23.75rem;
+  }
+
+  .about .container-main-header .main-title{
+    font-size: 4rem;
+    align-self: flex-start;
+    padding-top: 1.5rem;
+  }
+
+  .about .container-main-header .text{
+    max-width: 45.625rem;
+    padding-top: 3rem;
+  }
+
+
+  /*MAIN TEAM*/
+
+  .team{
+    background: url('./assets/bg-pattern-home-4-about-3.svg') no-repeat calc(50% + 40rem) 100%,
+              url('./assets/bg-pattern-about-2-contact-1.svg') no-repeat calc(50% - 45rem) 0,
+              #004047;
+    text-align: center;
+    padding: 8.5rem 0 5.5rem;
+  }
+
+  .about .title-article{
+    font-size: 3rem;
+    margin: 0 auto 4rem;
+  }
+
+  .container-member{
+    width: 69.375rem;
+  }
+
+  .member{
+    width: 21.875rem;
+  }
+
+
+  /*MAIN CLIENTS*/
+
+  .clients{
+    background: url('./assets/bg-pattern-about-4.svg') no-repeat calc(50% - 39rem) 0,
+              #012F34;
+   text-align: center;
+   padding: 9rem 0 8.5rem;
+  }
+
+  .container-clients-logo{
+    width: 69.375rem;
+  }
+
+  .container-logo-client:nth-of-type(1) .client-image{
+    width: 10.375rem;
+    height: 1.875rem; 
+  }
+
+  .container-logo-client:nth-of-type(2) .client-image{
+    width: 11.625rem;
+    height: 1.5rem; 
+  }
+
+  .container-logo-client:nth-of-type(3) .client-image{
+    width: 11.375rem;
+    height: 1.75rem; 
+  }
+
+  .container-logo-client:nth-of-type(4) .client-image{
+    width: 10.375rem;
+    height: 1.625rem; 
+  }
+
+  .container-logo-client:nth-of-type(5) .client-image{
+    width: 6rem;
+    height: 3rem; 
+  }
+
+}

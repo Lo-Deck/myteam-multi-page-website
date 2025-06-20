@@ -1,0 +1,182 @@
+
+.main-contact{
+  background: url('./assets/bg-pattern-contact-2.svg') no-repeat calc(100% + 6.3rem) calc(100% + 6.3rem),
+              #014E56;
+  padding: 0 0 5.375rem;
+}
+
+.contact .info{
+  width: clamp(20.4375rem, 7.7347rem + 54.1985vw, 33.75rem);
+  margin: 0 auto;
+}
+
+.info-title{
+  font-size: clamp(2.5rem, 1.0687rem + 6.1069vw, 4rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact .info-title + .text{
+  font-size: 2rem;
+  color: #F67E7E;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-info{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+}
+
+.section-info .image-info{
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.375rem;
+}
+
+.section-info:nth-of-type(1) .image-info{
+  margin-right: 1.75rem;
+}
+
+.section-info .text{
+  font-size: 1.125rem;
+}
+
+
+/*FORM*/
+
+form{
+  width: clamp(20.4375rem, 7.7347rem + 54.1985vw, 33.75rem);
+  margin: 3rem auto 0;
+}
+
+.input{
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 0.0625rem solid #fff;
+  font-size: 0.9375rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-indent: 1rem;
+  margin-top: 0.25rem;
+  padding: 1.2rem 0;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.input:hover{
+  cursor: pointer;
+}
+
+.button.button-submit{
+  width: 7.75rem;
+  height: 3rem;
+  background: #fff;
+  color: #004047;
+  border-radius: 1.5rem;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+}
+
+.button.button-submit:hover{
+  background: transparent;
+  color: #fff;
+  outline: 0.15rem solid #fff;
+}
+
+textarea{
+  resize: none;
+}
+
+.error-input.livvic-semiBold{
+  color: #F67E7E;
+  border-bottom: 0.0625rem solid #F67E7E;
+}
+
+.container-input span.error{
+  font-size: 0.7rem;
+  color: #F67E7E;
+  margin-left: 1rem;
+  position: absolute;
+}
+
+
+
+@media screen and (min-width: 48rem){
+
+  .main-contact{
+    background: url('./assets/bg-pattern-about-2-contact-1.svg') no-repeat -6.3rem 0,
+              url('./assets/bg-pattern-contact-2.svg') no-repeat calc(100% + 6.3rem) 100%,
+              #014E56;
+  }
+
+}
+
+
+@media screen and (min-width: 90rem){
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .container-header{
+    padding-bottom: 3rem;
+  }
+  
+  .main-contact{
+    background: url('./assets/bg-pattern-about-2-contact-1.svg') no-repeat calc(50% - 45rem) 4rem,
+          url('./assets/bg-pattern-contact-2.svg') no-repeat calc(50% + 45rem) 100%,
+          #014E56;
+    padding: 0 0 7.25rem; 
+    flex-grow: 1;
+  }
+
+  .container-info{
+    width: 69.5rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .contact .info{
+    margin: 0;
+    padding-top: 5rem;
+  }
+
+  .info-title{
+    text-align: left;
+    margin: 0 0 2.5rem; 
+    align-self: flex-end;
+  }
+
+  .contact .info-title + .text{
+    text-align: left;
+    margin: 0 0 2.5rem;
+  }
+
+  .section-info{
+    margin: 0 auto 1rem;
+  }
+
+
+/*FORM*/
+
+  form{
+    margin: 0 0 0;
+  }
+
+  .input{
+    margin-top: 0.5rem;
+  }
+
+}
+
